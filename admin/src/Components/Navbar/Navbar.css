@@ -1,0 +1,104 @@
+:root {
+    --sidebar: #fff0ed;
+    --body-color: #FFFFFF;
+    --dark-text: #fff;
+    --light-text: #101010;
+    --nav-color-two: #f6f6f2;
+    --nav-color-one: #f1f1f17e;
+    --border-color: #ddd;
+    --light-text-secondary: #464853;
+    --light-text-desc: #020202;
+    --cards-text-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.navbar .logo {
+    width: max(10%, 80px);
+    filter: none;
+}
+
+.navbar .profile {
+    width: 40px;
+    filter: none;
+}
+
+/* Toggle button (you can remove this if dark/light toggle is no longer needed) */
+#visual-toggle-button {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#visual-toggle {
+    appearance: none;
+    display: none;
+}
+
+.svgIcon-toggle {
+    width: 25px;
+}
+
+.moon-svg, .sun-svg {
+    display: none;
+}
+
+/* General UI Styling */
+.logo, .addd, .listt, .orderr, .profile {
+    filter: none;
+}
+
+p {
+    color: var(--light-text);
+}
+
+.list-table-format.title {
+    background-color: var(--body-color);
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus {
+    outline: black;
+}
+
+.add-product-name input,
+.add-product-description textarea {
+    background-color: white;
+    border: 2px solid gray;
+    padding: 10px;
+    color: black;
+}
+
+.add-product-name input::placeholder,
+.add-product-description textarea::placeholder {
+    color: black;
+}
+
+.inputclasa,
+.selectt {
+    color: black;
+    border: 1px solid gray;
+    background-color: transparent;
+}
+
+.inputclasa::placeholder,
+.selectt::placeholder {
+    color: gray;
+}
+
+/* Image filters reset */
+label img.image {
+    filter: none;
+}
